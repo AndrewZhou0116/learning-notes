@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="topnav">
+    <a href="index.html">Google</a>
+    <a href="image.html">Images</a>
+    <a href="advanced.html">Advanced</a>
+  </nav>
+
+  <div class="row">
+    <div class="panel banner"><h1>ADVANCED SEARCH</h1></div>
+    <div class="panel side">Use multiple fields to refine your Google search.</div>
+  </div>
+
+  <div class="adv-wrap">
+    <section>
+      <form class="adv-form" action="https://www.google.com/search" method="get">
+        <div class="field">
+          <label for="as_q">All these words</label>
+          <input id="as_q" name="as_q" type="text" placeholder="data science machine learning" />
+        </div>
+        <div class="field">
+          <label for="as_epq">This exact word or phrase</label>
+          <input id="as_epq" name="as_epq" type="text" placeholder='"neural network"' />
+        </div>
+        <div class="field">
+          <label for="as_oq">Any of these words</label>
+          <input id="as_oq" name="as_oq" type="text" placeholder="tutorial guide course" />
+        </div>
+        <div class="field">
+          <label for="as_eq">None of these words</label>
+          <input id="as_eq" name="as_eq" type="text" placeholder="beginner novice" />
+        </div>
+        <button type="submit">Advanced Search</button>
+      </form>
+    </section>
+
+    <figure class="adv-art" aria-hidden="true">
+      <img src="picture/garden.jpg" alt="">
+    </figure>
+  </div>
+</body>
+</html>

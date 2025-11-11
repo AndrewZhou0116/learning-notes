@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Images</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="topnav">
+    <a href="index.html">Google</a>
+    <a href="image.html">Images</a>
+    <a href="advanced.html">Advanced</a>
+  </nav>
+
+  <div class="row">
+    <div class="panel banner"><h1>IMAGE SEARCH</h1></div>
+    <div class="panel side">Search images on Google with one click.</div>
+  </div>
+
+  <!-- 装饰图片（可多放几张） -->
+  <div class="decor-strip" aria-hidden="true">
+    <figure class="decor"><img src="picture/1.jpg" alt=""></figure>
+    <figure class="decor"><img src="picture/4.jpg" alt=""></figure>
+    <figure class="decor"><img src="picture/2.jpg" alt=""></figure>
+    <figure class="decor"><img src="picture/3.jpg" alt=""></figure>
+  </div>
+
+  <div class="search">
+    <form action="https://www.google.com/search" method="get">
+      <input type="text" name="q" placeholder="Find images…" required />
+      <input type="hidden" name="tbm" value="isch" />
+      <button type="submit">Search Images</button>
+    </form>
+  </div>
+</body>
+</html>
